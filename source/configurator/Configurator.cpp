@@ -692,6 +692,7 @@ MyDialog::MyDialog(const wxString& title) : wxDialog(NULL, wxID_ANY, title,  wxP
 
 #if wxCHECK_VERSION(2, 8, 0)
     wxHyperlinkCtrl *link1 = new wxHyperlinkCtrl(ctsetPanel, -1, _("(more help here)"), _("http://docs.rigsofrods.org/gameplay/controls-config/#config-file-inputmap"), wxPoint(10, 100));
+	wxHyperlinkCtrl *link2 = new wxHyperlinkCtrl(ctsetPanel, -1, _("Download input mapping tool"), _("https://forum.rigsofrods.org/downloads.php?do=file&id=156"), wxPoint(10, 120));
 #endif // version 2.8
 
     wxPanel *ffPanel=new wxPanel(ctbook, -1);
